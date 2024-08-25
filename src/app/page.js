@@ -1,6 +1,6 @@
 "use client"
 import React, { useState } from 'react';
-import axios from 'axios';
+
 
 function App() {
   const [jsonInput, setJsonInput] = useState('');
@@ -11,7 +11,7 @@ function App() {
   const handleSubmit = async () => {
     try {
       const parsedData = JSON.parse(jsonInput);
-      const result = await axios.post('https://your-backend-url/bfhl', { data: parsedData.data });
+      const result = await fetch('https://your-backend-url/bfhl', { data: parsedData.data });
       setResponse(result.data);
       setError(null);
     } catch (err) {
