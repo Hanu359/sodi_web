@@ -23,8 +23,8 @@ export async function POST(req: NextRequest) {
 
     return NextResponse.json({
       is_success: true,
-      user_id: 'john_doe_17091999',
-      email: 'john@xyz.com',
+      user_id: 'Hanu359',
+      email: 'hanuxyz123@gmail.com',
       roll_number: 'ABCD123',
       numbers,
       alphabets,
